@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #e2e8f0;
+        }
+        .bg-blob {
+            position: absolute;
+            z-index: -1;
+            box-sizing: content-box;
+            height: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bg-large-blob {
+            top: 0;
+            left: 0;
+            width: 70%;
+            padding-bottom: 70%;
+            background-image: url(./large-blob.svg);
+        }
+        .bg-medium-blob {
+            top: 20%;
+            right: 0;
+            width: 500px;
+            padding-bottom: 500px;
+            background-image: url(./medium-blob.svg);
+        }
+        .p {
+            padding: 10rem;
+        }
+    </style>
+    <title>SVG Blob</title>
+</head>
+<body>
+    <div class="bg-blob bg-medium-blob"></div>    
+    <div class="bg-blob bg-large-blob"></div>    
+</body>
+</html>
